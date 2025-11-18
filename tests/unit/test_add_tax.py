@@ -11,3 +11,7 @@ import pytest
 def test_add_tax(price, tax_rate, expected):
     result = add_tax(price, tax_rate)
     assert result == pytest.approx(expected)
+
+def test_add_tax_negative_rate():
+    with pytest.raises(ValueError):
+        add_tax(100.0, -0.05)

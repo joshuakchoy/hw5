@@ -11,6 +11,6 @@ import pytest
     ],
 )
 
-def test_apply_discount_regression(price, percent, expected):
+def test_apply_discount_bug(price, percent, expected):
     result = apply_discount(price, percent)
     assert result == expected
