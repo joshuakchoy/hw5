@@ -10,4 +10,8 @@
 
 ## Question 2
 
-Briefly explain pytest discovery (file/function naming) and what a fixture is.
+PyTest discovery is the way that PyTest finds and runs the code. It looks for file and function names that are formatted in a specific way and tests those. File and function names need to start or end with "test\_" or "\_test" to be checked by PyTest. A fixture is a piece of code that can be used for the test functions.
+
+## PyTest Features Used
+
+- pytest.mark.parameterize
